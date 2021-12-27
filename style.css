@@ -1,0 +1,421 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+/* Variables */
+:root{
+    /* first theme colors */
+    /* background */
+    --mainBackground : hsl(222, 26%, 31%);
+    --keyPadBackground : hsl(223, 31%, 20%);
+    --screenBackground : hsl(224, 36%, 15%);
+
+    /* keys */
+    /* delete and reset colors */
+    --keyBackground : hsl(225, 21%, 49%);
+    --keyShadow : hsl(224, 28%, 35%);
+
+    /* equal buttons color */
+    --redKeyBackground : hsl(6, 63%, 50%);
+    --redKeyShadow :  hsl(6, 70%, 34%);
+
+    /* number keypads buttons */
+    --numberKeybackground : hsl(30, 25%, 89%);
+    --numberKeyShadow : hsl(28, 16%, 65%);
+
+
+    /* text color */
+    --veryDarkgrayisBlue : hsl(221, 14%, 31%);
+    --white-color : #ffffff;
+    /* end of first theme colors */
+    
+
+    /* theme two  */
+     /* Theme 2 */
+
+ /* Backgrounds */
+
+    --mainbackgroundth2: hsl(0, 0%, 90%);
+    --keypadbackgroundth2: hsl(0, 5%, 81%);
+    --screenbackgroundth2: hsl(0, 0%, 93%);
+
+/* #### Keys */
+
+    --keybackgroundth2: hsl(185, 42%, 37%);
+    --keyshadowth2: hsl(185, 58%, 25%);
+
+    --orangebkeybackgroundth: hsl(25, 98%, 40%);
+    --orangeshadow: hsl(25, 99%, 27%);
+
+    --Lightgrayishyellowkeybackground: hsl(45, 7%, 89%);
+    --Darkgrayishorangekeyshadow: hsl(35, 11%, 61%);
+
+/* #### Text */
+
+    --Verydarkgrayishyellow: hsl(60, 10%, 19%);
+    --White-text: hsl(0, 0, 100%);
+
+
+    /* theme 3 variables */
+    /* bakcgrounds */
+
+    --mainbackgroundth3: hsl(268, 75%, 9%);
+    --keybackgroundscreenbackground: hsl(268, 71%, 12%);
+
+    /* keys */
+    --keybackgroundth3: hsl(281, 89%, 26%);
+    --keyshadowth3: hsl(285, 91%, 52%);
+
+    --Purecyankeybackground: hsl(176, 100%, 44%);
+    --Softcyankeyshadow: hsl(177, 92%, 70%);
+
+    --Verydarkvioletkeybackground: hsl(268, 47%, 21%);
+    --Darkmagentakeyshadow: hsl(290, 70%, 36%);
+
+
+    /* text */
+    --Lightyellowth3: hsl(52, 100%, 62%);
+    --Verydarkblue: hsl(198, 20%, 13%);
+
+}
+
+*, *::before , *::after{
+    margin : 0;
+    padding : 0;
+    box-sizing: inherit
+
+}
+html , body{
+    font-size : 24px;
+    font-family: "Spartan" ,sans-serif;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+/* depends on the theme main background*/
+
+.main{
+    /* background : var(--mainBackground); */
+    width : 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1000ms ease-in-out;
+}
+
+/* theme one styles */
+.main.theme-1{
+    background : var(--mainBackground);
+}
+.main.theme-1 .selector{
+    color : var(--white-color);
+}
+.main.theme-1 .selector .theme-content .span-btn{
+    background-color : var(--screenBackground);
+}
+.main.theme-1 .selector .theme-content .span-btn span.active{
+    background-color: var(--redKeyBackground);
+}
+
+.main.theme-1 .container-screen .screen{
+    background-color: var(--screenBackground);
+}
+.main.theme-1 input[type="text"]{
+    color : var(--white-color);
+}
+.main.theme-1 .keypad-container{
+    background-color: var(--screenBackground);
+}
+
+.main.theme-1 .keypad-container .keypad{
+    background : var(--numberKeybackground);
+    color : var(--keyBackground);
+    box-shadow: 0px 3px 2px var(--numberKeyShadow);
+}
+.main.theme-1 .keypad-container .keypad.reset , .main.theme-1 .keypad-container .keypad.delete {
+    background-color: var(--mainBackground);
+    color : var(--white-color);
+    box-shadow: 0px 3px 2px var(--keyShadow);
+}
+
+.main.theme-1 .keypad-container .keypad.equal{
+    background-color: var(--redKeyBackground);
+    color : var(--white-color);
+    box-shadow: 0px 3px 2px var(--redKeyShadow);
+}
+
+
+/* end of theme of styles */
+/* theme two styles */
+.main.theme-2{
+    background : var(--mainbackgroundth2);
+    
+}
+.main.theme-2 .selector{
+    color : var(--veryDarkgrayisBlue);
+}
+.main.theme-2 .selector .theme-content .span-btn{
+    background-color : var(--keybackgroundth2);
+}
+.main.theme-2 .selector .theme-content .span-btn span.active{
+    background-color: var(--orangebkeybackgroundth);
+}
+
+.main.theme-2 .container-screen .screen{
+    background-color: var(--screenbackgroundth2);
+}
+.main.theme-2 input[type="text"]{
+    color : var(--veryDarkgrayisBlue);
+}
+.main.theme-2 .keypad-container{
+    background-color: var(--keypadbackgroundth2);
+}
+
+.main.theme-2 .keypad-container .keypad{
+    background : var(--Lightgrayishyellowkeybackground);
+    color : var(--veryDarkgrayisBlue);
+    box-shadow: 0px 3px 2px var(--Darkgrayishorangekeyshadow);
+}
+
+.main.theme-2 .keypad-container .keypad.reset ,.main.theme-2 .keypad-container .keypad.delete{
+    background-color: var(--keybackgroundth2);
+    color : var(--white-color);
+    box-shadow: 0px 3px 2px var(--keyshadowth2);
+}
+
+.main.theme-2 .keypad-container .keypad.equal{
+    background-color: var(--orangebkeybackgroundth);
+    color : var(--white-color);
+    box-shadow: 0px 3px 2px var(--orangeshadow);
+}
+
+
+/* end of theme two style */
+
+/* theme 3 styles */
+.main.theme-3{
+    background: var(--mainbackgroundth3);
+}
+.main.theme-3 .selector , .main.theme-3 input[type="text"] , .main.theme-3 .keypad-container .keypad{
+    color : var(--Lightyellowth3);
+}
+
+.main.theme-3 .container-screen .screen ,.main.theme-3 .keypad-container , .main.theme-3 .selector .theme-content .span-btn{
+    background-color: var(--keybackgroundscreenbackground);
+}
+
+.main.theme-3 .keypad-container .keypad{
+    background : var(--Verydarkvioletkeybackground);
+    box-shadow: 0px 3px 2px var(--Darkmagentakeyshadow);
+}
+
+.main.theme-3 .selector .theme-content .span-btn span.active{
+    background-color: var(--Purecyankeybackground);
+}
+
+
+.main.theme-3 .keypad-container .keypad.reset ,.main.theme-3 .keypad-container .keypad.delete{
+    background-color: var(--keybackgroundth3);
+    color : var(--white-color);
+    box-shadow: 0px 3px 2px var(--keyshadowth3);
+}
+
+.main.theme-3 .keypad-container .keypad.equal{
+    background-color: var(--Purecyankeybackground);
+    color : var(--Verydarkblue);
+    box-shadow: 0px 3px 2px var(--Softcyankeyshadow);
+}
+.main-container{
+    width : 350px;
+    height : 550px;
+    display: flex;
+    flex-direction: column;
+}
+.main-container .selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom : 15px;
+    font-size : 18px;
+    height : 30px;
+    transition: all 1000ms ease-in-out;
+}
+
+.selector h3{
+    font-size : 32px;
+}
+.selector .theme-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 5px;
+}
+.selector h6{
+    font-size : 10px;
+    /* letter-spacing: 1.5; */
+    font-weight: 700;
+    margin-right : 10px;
+}
+
+/* depends on the theme */
+.selector .theme-content .span-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-gap : 5px;
+    width : 40px;
+    height : 10px;
+    border-radius: 5px;
+    transition: all 1000ms ease-in-out;
+    
+    
+}
+
+/* depends on the theme */
+.selector .theme-content .span-btn span{
+    display: inline-block;
+    width : 10px;
+    height : 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+
+.selector .theme-content .span-btn span.th-1::after{
+    content: '1';
+    position: absolute;
+    top : -12px;
+    font-size : 10px;
+
+
+}
+
+.selector .theme-content .span-btn span.th-2::after{
+    content: '2';
+    position: absolute;
+    top : -12px;
+    font-size : 10px;
+}
+
+.selector .theme-content .span-btn span.th-3::after{
+    content: '3';
+    position: absolute;
+    top : -12px;
+    font-size : 10px;
+}
+
+
+.selector .theme-content .span-btn span.active{
+    visibility: visible;
+}
+.container-screen{
+    height : 65px;
+    width: 100%;
+    margin-bottom: 15px;
+    /* border-radius: 5%; */
+    transition: all 500ms ease-in-out;
+
+}
+.container-screen .screen{
+    height: inherit;
+    width: inherit;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    border-radius: 7px;
+    transition: all 500ms ease-in-out;
+}
+input[type="text"]{
+    font-size : 30px;
+    text-align: right;
+    text-indent : 5px;
+    padding : 5px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.keypad-container .keypad.reset {
+    grid-column: 1/3;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+}
+.keypad-container .keypad.equal{
+    grid-column: 3/5;
+    transition: all 500ms ease-in-out;
+}
+.keypad-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(60px, 1fr) );
+    grid-gap : 15px;
+    justify-content: center;
+    align-items: center;
+    padding : 15px;
+    transition: all 500ms ease-in-out;
+    border-radius: 7px;
+}
+
+
+.keypad-container .keypad{
+    padding : 10px 5px;
+    font-size : 20px;
+    text-align: center;
+    border-radius: 10px;
+    border : none;
+    outline: none;
+    font-weight: 700;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+.keypad-container .keypad:active{
+    transform: scale(1.02);
+}
+
+.keypad-container .keypad.delete{
+    padding : 10px 5px;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+}
+
+@media (max-width : 360px) {
+    .keypad-container{
+        display : grid;
+        grid-template-columns: repeat( auto-fit, minmax(55px, 1fr) );
+    }
+    .main-container{
+        width : 355px;
+        padding : 15px;
+    }
+}
+@media (max-width : 310px) {
+    .keypad-container{
+        display : grid;
+        grid-template-columns: repeat( auto-fit, minmax(50px, 1fr) );
+        grid-gap : 10px;
+    }
+    .main-container{
+        width : 300px;
+        padding : 10px;
+    }
+}
+
+@media (max-width : 251px) {
+    .keypad-container{
+        display : grid;
+        grid-template-columns: repeat( auto-fit, minmax(45px, 1fr) );
+    }
+    .main-container{
+        width : 249px;
+        padding : 5px;
+    }
+}
+
+
+@media (max-width : 215px) {
+    .keypad-container{
+        display : grid;
+        grid-template-columns: repeat( auto-fit, minmax(60px, 1fr) );
+    }
+    .main-container{
+        width : 210px;
+        padding : 5px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+ 
+</head>
+<body class="main theme-1">
+  <div class="main-container">
+
+ 
+  <div class="selector">
+    <h3>calc</h3>
+    <div class="theme-content">
+      <h6 style="text-transform: uppercase;">theme</h6>
+        <div class="span-btn">
+          <span class="active th-1"></span>
+          <span class="th-2"></span>
+          <span class="th-3"></span>
+        </div>
+    </div>
+  </div>
+  <div class="container-screen">
+    <input type="text" class="screen" placeholder="" id="screenInput"> 
+    <input type="hidden" name="" id="previousoperand">
+  </div>
+  <div class="container keypad-container">
+    <button class="keypad"        data-number="7" >7</button>
+    <button class="keypad"        data-number="8" >8</button>
+    <button class="keypad"        data-number="9" >9</button>
+    <button class="keypad delete" data-delete >del</button>
+    <button class="keypad"        data-number="4" >4</button>
+    <button class="keypad"        data-number="5"  >5</button>
+    <button class="keypad"        data-number="6" >6</button>
+    <button class="keypad plus "   data-operation="+">+</button>
+    <button class="keypad"        data-number="1" >1</button>
+    <button class="keypad"        data-number="2" >2</button>
+    <button class="keypad"        data-number="3" >3</button>
+    <button class="keypad minus"  data-operation="-">-</button>
+    <button class="keypad dot"   data-number=".">.</button>
+    <button class="keypad"        data-number="0" >0</button>
+    <button class="keypad divide" data-operation="/">/</button>
+    <button class="keypad multiple"  data-operation="*">*</button>
+    <button class="keypad reset" data-reset >reset</button>
+    <button class="keypad equal" data-equals>=</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
